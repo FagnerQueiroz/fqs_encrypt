@@ -79,7 +79,6 @@ class fqs_encrypt{
 		$encrypted_text  = str_split($encrypted_text);
 		$decrypted_text ='';
 		$count = 0;
-		$strengh = 3;
 		foreach ($encrypted_text as $key => $value) {
 			if($count == $count_break){
 				$count = 0;
