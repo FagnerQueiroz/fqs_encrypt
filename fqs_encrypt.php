@@ -53,9 +53,9 @@ class fqs_encrypt{
 				$add_char.=$char; 
 				$i ++;
 			}
-	         $posicao = array_search($value, $public_key);
+			$position = array_search($value, $public_key);
 			if(in_array($value, $public_key)){
-				$encrypted_text.=$private_key[$posicao]. $add_char; 
+				$encrypted_text.=$private_key[$position]. $add_char; 
 			}else{
 				$encrypted_text.=$value. $add_char;
 			}
@@ -87,8 +87,8 @@ class fqs_encrypt{
 			if($count ==0){
 				$count++;
 				if(in_array($value, $private_key)){
-					$posicao = array_search( $value, $private_key);
-					$char =$public_key[$posicao]; 
+					$position = array_search( $value, $private_key);
+					$char =$public_key[$position]; 
 					$decrypted_text.=$char; 
 				}else{
 					$decrypted_text.=$value;
@@ -98,7 +98,7 @@ class fqs_encrypt{
 			}
 		}
 
-	return $decrypted_text;
+		return $decrypted_text;
 	}
 }
 
