@@ -1,5 +1,6 @@
 # fqs_encrypt
-Classe para criptografia de texto
+Classe para criptografia de texto 
+Aplicão da LGPD - Lei Geral de Proteção aos dados;
 // Está cansado de base64?
 // Classe para criptografia de texto
 // Gere uma chave privada atravéz do método key_genaration. Chaves diferentes geram textos criptografados diferentes;
